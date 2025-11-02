@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* === File Layout === */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* === Environment Settings === */
+    "target": "ES2022", // Output modern JavaScript
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext", // Use CommonJS for Node.js
+    "lib": ["ESNext"], // Include latest JS features
+    "types": ["node"], // Include Node.js type definitions
+
+    /* === Output Options === */
+    "sourceMap": true, // Generate .map files for debugging
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Map .d.ts to source for debugging
+
+    /* === Type Safety === */
+    "strict": true, // Enable all strict type checks
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* === Module Behavior === */
+    "esModuleInterop": true, // Allow default imports for CommonJS modules
+    "isolatedModules": true, // Ensure each file can be transpiled alone
+    "skipLibCheck": true, // Skip type checking node_modules
+
+    /* === Style / Warnings === */
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
